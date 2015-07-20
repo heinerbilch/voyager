@@ -1,7 +1,7 @@
 buildscript {
 	repositories { mavenCentral() }
 	dependencies { 
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
 		classpath('org.ajoberstar:gradle-git:1.1.0')
 	}
 }
@@ -12,7 +12,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'org.ajoberstar.github-pages'
 
 sourceCompatibility = 1.8
-version = '0.0.2'
+version = '0.0.3'
 jar {
 	manifest {
 		attributes 'Implementation-Title': 'Voyager',
@@ -50,4 +50,4 @@ githubPages {
 	}
   }
 
-task wrapper(type: Wrapper) { gradleVersion = '2.4' }
+task wrapper(type: Wrapper) { gradleVersion = '2.5' }
