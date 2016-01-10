@@ -10,6 +10,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
 apply plugin: 'org.ajoberstar.github-pages'
+apply plugin: 'pmd'
 
 sourceCompatibility = 1.8
 version = '0.0.4'
